@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen.artistscreen.ArtistBottomSheet"
+    android:background="@color/lightblack">
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_marginTop="@dimen/_4sdp"
+           >
+           <com.makeramen.roundedimageview.RoundedImageView
+               android:layout_width="@dimen/_50sdp"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_baseline_horizontal_rule_24"
+               android:scaleType="centerCrop"
+               app:riv_corner_radius="@dimen/_4sdp"
+               />
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center_horizontal"
+           android:layout_marginTop="@dimen/_10sdp"
+           >
+
+           <com.makeramen.roundedimageview.RoundedImageView
+               android:layout_width="@dimen/_140sdp"
+               android:layout_height="@dimen/_140sdp"
+               android:src="@drawable/garmi"
+               app:riv_corner_radius="@dimen/_5sdp"
+               android:id="@+id/bottomsheetDialogImage"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:lines="1"
+               android:maxLines="1"
+               android:text="Garmi"
+               android:layout_marginTop="@dimen/_8sdp"
+               android:textSize="@dimen/_16sdp"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:id="@+id/bottomsheetDialogSongName"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Arjit Singh and Pritam"
+               android:textColor="@color/white"
+               android:lines="1"
+               android:maxLines="1"
+               android:layout_marginTop="@dimen/_2sdp"
+               android:id="@+id/bottomsheetDialogArtistName"
+
+               />
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="@dimen/_7sdp"
+           >
+
+           <View
+               android:id="@+id/divider"
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_margin="@dimen/_9sdp"
+
+               android:layout_marginTop="@dimen/_33sdp"
+               android:background="@color/white" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/_10sdp"
+               android:gravity="center_vertical"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/_27sdp"
+                   android:layout_height="@dimen/_28sdp"
+                   android:src="@drawable/ic_baseline_playlist_add_24"
+                   android:scaleType="centerCrop"
+                   app:tint="#CFCCCC"
+                />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add to playlist"
+                   android:textColor="@color/white"
+                   android:layout_marginLeft="@dimen/_17sdp"
+                   android:textSize="@dimen/_14sdp"
+                   />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="@dimen/_10sdp"
+               android:gravity="center_vertical"
+               >
+
+               <ImageView
+                   android:layout_width="@dimen/_27sdp"
+                   android:layout_height="@dimen/_28sdp"
+                   android:src="@drawable/ic_baseline_skip_next_24"
+                   android:scaleType="centerCrop"
+                   app:tint="#CFCCCC"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Play next"
+                   android:textColor="@color/white"
+                   android:layout_marginLeft="@dimen/_17sdp"
+                   android:textSize="@dimen/_14sdp"
+                   />
+           </LinearLayout>
+
+
+       </LinearLayout>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

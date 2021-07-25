@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen.artistscreen.ArtistScreen"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1.1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/white"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    />
+            </LinearLayout>
+
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arjit"
+                android:transitionName="artistImage"
+                app:riv_corner_radius="@dimen/_5sdp"
+                android:id="@+id/singerImage"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best of Arjit Singh"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textStyle="bold"
+                android:id="@+id/bestOfSingerText"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_outline_thumb_up_24"
+                    app:tint="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+
+                    android:background="@drawable/playall_btn_bg"
+                    android:text="Play All"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:tint="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/artistsong_recycler_view"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

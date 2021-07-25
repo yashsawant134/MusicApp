@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicScreen.MusicScreen"
+    android:background="@color/background"
+    android:foreground="?attr/selectableItemBackground">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white"
+            android:id="@+id/back"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Now Playing"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_50sdp"
+                    android:layout_marginRight="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:elevation="@dimen/_7sdp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_210sdp"
+                        android:src="@mipmap/ic_launcher"
+                        android:scaleType="centerCrop"
+                        android:transitionName="image"
+                        android:id="@+id/artisworkimage"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dsd sdsd d dsd dsdssdsdsdsdsdsddsdsd dsdds d"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/_37sdp"
+                    android:layout_marginLeft="@dimen/_37sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/musicscreenname"
+                    android:textAlignment="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/musicbg"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_weight="1"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        app:layout_constraintBottom_toTopOf="@+id/musicseekbar"
+                        app:layout_constraintLeft_toLeftOf="@+id/musicseekbar"
+                       android:id="@+id/musiccurrenttime"
+                        android:textColor="@color/white"
+                        />
+
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_17sdp"
+                        android:layout_marginLeft="@dimen/_13sdp"
+                        android:layout_marginRight="@dimen/_13sdp"
+                        android:progressBackgroundTint="@color/white"
+                        android:progressTint="#C30F4C"
+                        android:progressDrawable="@drawable/seekbarbg"
+                        android:id="@+id/musicseekbar"
+                        app:layout_constraintTop_toBottomOf="@+id/musiccurrenttime"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03:00"
+                        app:layout_constraintBottom_toTopOf="@+id/musicseekbar"
+                        app:layout_constraintRight_toRightOf="@+id/musicseekbar"
+                        android:id="@+id/musictotaltime"
+                        android:textColor="@color/white"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="@dimen/_15sdp"
+android:layout_weight="1"
+                >
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_baseline_shuffle_24"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    app:fab_colorNormal="@android:color/transparent"
+                    app:fab_showShadow="false"
+
+                    />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/white"
+                    android:src="@drawable/ic_baseline_skip_previous_24"
+                    app:fab_size="mini"
+                    android:id="@+id/previous"
+                    />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/white"
+                    android:src="@drawable/ic_baseline_play_arrow_24"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:id="@+id/playpause"
+
+                    />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/white"
+                    android:src="@drawable/ic_baseline_skip_next_24"
+                    app:fab_size="mini"
+                    android:id="@+id/next"
+                    />
+
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    app:fab_colorNormal="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_playlist"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    app:fab_showShadow="false"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                    app:tint="@color/white"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:textSize="@dimen/_15sdp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

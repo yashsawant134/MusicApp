@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:civ_border_color="#E91E63"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/artistnamefeature"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="@dimen/_2sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/featureartist_image"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/featureartist_image"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Arjit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/artistnamefeature"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

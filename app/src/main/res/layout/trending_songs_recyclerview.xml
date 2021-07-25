@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:backgroundTint="@android:color/transparent"
+    android:outlineSpotShadowColor="@android:color/transparent"
+    android:outlineAmbientShadowColor="@android:color/transparent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_87sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/first"
+                android:scaleType="centerCrop"
+                android:id="@+id/trendingsongimage"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:text="Barish ban ja...."
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/white"
+            android:id="@+id/trendingsongname"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:text="Payal Dev, Stebin .."
+            android:textColor="@color/teal_200"
+            android:id="@+id/trendingsongsinger"
+            android:textSize="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxEms="1"
+            android:maxLines="1"
+            android:text="9M+ plays"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/teal_200"
+            android:id="@+id/trendingsongnoofplays"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#C44A4A4A"
+    app:cardCornerRadius="@dimen/_9sdp"
+    android:layout_margin="@dimen/_7sdp"
+    android:elevation="@dimen/_15sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_155sdp"
+            android:orientation="vertical"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_77sdp"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:id="@+id/artisworkimage"
+                    />
+
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_size="mini"
+                    app:fab_showShadow="false"
+                    android:src="@drawable/ic_baseline_play_arrow_24"
+                    app:fab_colorNormal="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/artisworkimage"
+                    app:layout_constraintBottom_toBottomOf="@+id/artisworkimage"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:elevation="@dimen/_1sdp"
+                    app:fab_colorRipple="#8BE91E63"
+                    app:fab_colorPressed="#8BE91E63"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/artisworkimage"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Song :"
+                            android:textColor="@color/teal_200"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_9sdp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Song :"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:id="@+id/songname"
+                            android:textSize="@dimen/_9sdp"
+                            android:maxLength="40"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Artist :"
+                            android:textColor="@color/teal_200"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_9sdp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Song :"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:id="@+id/artistname"
+                            android:textSize="@dimen/_9sdp"
+                            android:maxLength="40"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/_5sdp"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Movie :"
+                            android:textColor="@color/teal_200"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_9sdp"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Song :"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:id="@+id/moviename"
+                            android:textSize="@dimen/_9sdp"
+                            android:maxLength="40"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
